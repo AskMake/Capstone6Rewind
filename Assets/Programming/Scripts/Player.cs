@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Cinemachine;
+using UnityEditor.MPE;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
@@ -14,7 +18,8 @@ public class Player : MonoBehaviour
     public Camera playerCamera;
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
-
+    PlayerInput playerInput;
+    InventoryManager inventoryManager;
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
@@ -23,21 +28,29 @@ public class Player : MonoBehaviour
     float distance;
     [HideInInspector]
     public bool canMove = true;
+    [SerializeField]
+    CinemachineInputAxisController axisController;
 
-    InputAction moveAction,jumpAction,interactAction;
+    InputAction moveAction,jumpAction,interactAction,inventoryAction,uiInventoryAction;
     [SerializeField]
     LayerMask layerMask;
+    public bool inDialogue;
+    [SerializeField]
+    EventSystem eventSystem;
 
     void Start()
     {
+        inventoryManager = InventoryManager.Instance;
         characterController = GetComponent<CharacterController>();
-
+        playerInput = GetComponent<PlayerInput>();
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("Jump");
         interactAction = InputSystem.actions.FindAction("Interact");
+        inventoryAction = InputSystem.actions.FindAction("Inventory");
+        uiInventoryAction = InputSystem.actions.FindAction("InventoryCancel");
     }
 
     void Update()
@@ -60,7 +73,10 @@ public class Player : MonoBehaviour
         {
             moveDirection.y = movementDirectionY;
         }
-
+        if((inventoryAction.IsPressed() || uiInventoryAction.IsPressed()) && !inDialogue)
+        {
+            Inventory();
+        }
         // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
         // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
         // as an acceleration (ms^-2)
@@ -81,6 +97,11 @@ public class Player : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
             ObjectCheck();
         }
+        if( eventSystem.currentSelectedGameObject.TryGetComponent<InventoryInfo>(out var inventoryInfo))
+        {
+            Debug.Log(inventoryInfo.name);
+        }
+        
 
     }
     void ObjectCheck()
@@ -90,7 +111,7 @@ public class Player : MonoBehaviour
     var ray = playerCamera.ScreenPointToRay(Input.mousePosition);
    
     if (Physics.Raycast(ray, out var hit, distance))
-    {
+    {   
         if(hit.collider.TryGetComponent<IInteractable>(out var interactable))
         {
             // hitting an IInteractable -> store
@@ -129,5 +150,24 @@ public class Player : MonoBehaviour
 
         // if not null -> set looking
         if(currentInteractable != null) currentInteractable.IsLooking = true;
+    }
+    public void ChangeButtonMap()
+    {
+        if(playerInput.currentActionMap.name == playerInput.defaultActionMap)
+        {
+            playerInput.SwitchCurrentActionMap("UI");
+            canMove = false;
+            axisController.Controllers[1].Enabled = false;
+        }
+        else {
+            playerInput.SwitchCurrentActionMap("Player");
+            canMove = true;
+            axisController.Controllers[1].Enabled = true;
+        }
+    }
+    void Inventory()
+    {
+        inventoryManager.Inventory();
+        ChangeButtonMap();
     }
 }
