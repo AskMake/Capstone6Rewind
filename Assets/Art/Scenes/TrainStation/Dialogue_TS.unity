@@ -55375,6 +55375,7 @@ MonoBehaviour:
   phoneUI: {fileID: 352372968}
   tutorialText: {fileID: 1581904614}
   tutorialDuration: 25
+  isGiven: 0
 --- !u!4 &2024719203
 Transform:
   m_ObjectHideFlags: 0
@@ -55408,6 +55409,7 @@ MonoBehaviour:
   dialogue: {fileID: 849701986}
   textSpeed: 0
   lines: []
+  phone: {fileID: 2024719202}
 --- !u!114 &2024719205
 MonoBehaviour:
   m_ObjectHideFlags: 0
