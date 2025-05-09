@@ -97,10 +97,10 @@ public class Player : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
             ObjectCheck();
         }
-        if( eventSystem.currentSelectedGameObject.TryGetComponent<InventoryInfo>(out var inventoryInfo))
-        {
-            Debug.Log(inventoryInfo.name);
-        }
+        // if( eventSystem.currentSelectedGameObject.TryGetComponent<InventoryInfo>(out var inventoryInfo))
+        // {
+        //     Debug.Log(inventoryInfo.name);
+        // }
         
 
     }
