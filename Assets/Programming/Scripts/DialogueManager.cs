@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     private string[] lines;
     private int index;
     private bool finished;
+    [SerializeField]
+    PhoneAndTutorialManager phone;
 
     void Awake()
     {
@@ -65,6 +67,11 @@ public class DialogueManager : MonoBehaviour
         if(lines.Length > 0){
             StartCoroutine(TypeLine());
         }
+    }
+    public void StartDialogue(ItemInfo itemInfo, bool givePhone)
+    {
+        StartDialogue(itemInfo);
+        phone.isGiven= givePhone;
     }
 
     IEnumerator TypeLine()

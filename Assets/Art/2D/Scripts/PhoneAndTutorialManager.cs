@@ -10,6 +10,7 @@ public class PhoneAndTutorialManager : MonoBehaviour
     private float tutorialTimer;
     private bool tutorialActive = true;
     private bool phoneIsActive = false;
+    public bool isGiven;
 
     void Start()
     {
@@ -32,7 +33,7 @@ public class PhoneAndTutorialManager : MonoBehaviour
         }
 
         // Toggle phone on P key press
-        if (Input.GetKeyDown(KeyCode.P))
+        if (isGiven && Input.GetKeyDown(KeyCode.P))
         {
             phoneIsActive = !phoneIsActive;
             phoneUI.SetActive(phoneIsActive);

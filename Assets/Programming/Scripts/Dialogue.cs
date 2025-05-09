@@ -8,7 +8,7 @@ public class Dialogue : Item
     {
     {
         interacted = true;
-        manager.StartDialogue(itemInfo);
+        manager.StartDialogue(itemInfo,true);
         base.Interact();
     }
     }
