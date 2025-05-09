@@ -4,6 +4,7 @@ using UnityEngine;
 public class Item : MonoBehaviour, IInteractable
 {   
     [SerializeField] private Outline outline;
+    [SerializeField] protected ItemInfo itemInfo;
     // adjust delays in seconds
     [SerializeField] private float outlineEnableDelay = 0.5f;
     [SerializeField] private float outlineDisableDelay = 0.5f;
@@ -17,6 +18,10 @@ public class Item : MonoBehaviour, IInteractable
     {
         if(!outline) outline = GetComponent<Outline>();
         outline.enabled = false;
+        if(!itemInfo)
+        {
+            Debug.LogError("Give"+ gameObject.name +" ItemInfo");
+        }
     }
     public bool IsLooking { get => isLooking; set {// same value ignore to save some work
             if(isLooking == value) return;
@@ -25,26 +30,15 @@ public class Item : MonoBehaviour, IInteractable
             isLooking = value;
 
             // if one was running cancel the current routine
-            if(lookingRoutine != null) StopCoroutine(lookingRoutine);
+            if(this && lookingRoutine != null) StopCoroutine(lookingRoutine);
 
             // start a new routine to apply the outline delayed
+            if(this){
             lookingRoutine = StartCoroutine(EnabledOutlineDelayed(value)); }}
-
+}
     public virtual void Interact()
     {
         Debug.Log($"Interacted with {name}", this);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    private void Update()
-    {
-        
     }
      private IEnumerator EnabledOutlineDelayed(bool enable)
     {
@@ -52,7 +46,7 @@ public class Item : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(enable ? outlineEnableDelay : outlineDisableDelay);     
 
         // apply state
-        outline.enabled = true; 
+        outline.enabled = enable; 
 
         // reset the routine field just to be sure
         lookingRoutine = null;
