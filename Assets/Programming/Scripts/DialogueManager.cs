@@ -68,10 +68,10 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(TypeLine());
         }
     }
-    public void StartDialogue(ItemInfo itemInfo, bool givePhone)
+    public void StartDialogue(ItemInfo itemInfo, bool givenoteBook)
     {
         StartDialogue(itemInfo);
-        phone.isGiven= givePhone;
+        phone.isGiven= givenoteBook;
     }
 
     IEnumerator TypeLine()
