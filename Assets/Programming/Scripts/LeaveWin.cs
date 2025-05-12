@@ -9,6 +9,7 @@ public class LeaveWin : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && phone.isGiven)
         {
+            Debug.Log("g");
             SceneManager.LoadScene(0);
             SceneManager.SetActiveScene(SceneManager.GetSceneAt(0));
         }

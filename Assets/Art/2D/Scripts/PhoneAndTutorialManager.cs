@@ -10,6 +10,7 @@ public class PhoneAndTutorialManager : MonoBehaviour
     public float tutorialDuration = 15f;
 
     private float tutorialTimer;
+    [SerializeField]
     private float noteTutTimer;
     private bool tutorialActive = true;
     private bool noteTut = true;
@@ -54,7 +55,7 @@ public class PhoneAndTutorialManager : MonoBehaviour
                 tutorialText.gameObject.SetActive(true);
             }
         }
-         if (isGiven && Input.GetKeyDown(KeyCode.G) && !phoneIsActive)
+         if (isGiven && Input.GetKeyDown(KeyCode.N) && !phoneIsActive)
         {
             noteBookActive = !noteBookActive;
             noteUI.SetActive(noteBookActive);

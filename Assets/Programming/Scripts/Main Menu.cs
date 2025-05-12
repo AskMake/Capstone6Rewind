@@ -1,9 +1,16 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void MenuButton(string name)
+    [SerializeField]
+    PlayerInput playerInput;
+    void Start()
+    {
+        playerInput.SwitchCurrentActionMap("UI");
+    }
+    public void MenuButton(string name)
    {
      SceneManager.SetActiveScene(SceneManager.GetSceneByName(name));
    }
