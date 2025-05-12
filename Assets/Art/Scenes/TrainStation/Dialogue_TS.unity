@@ -57885,7 +57885,7 @@ PrefabInstance:
       objectReference: {fileID: 1581904613}
     - target: {fileID: 5842564686604162767, guid: 7dd930240ff6e2c45970dcf39eb5b7aa, type: 3}
       propertyPath: isGiven
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5842564686604162767, guid: 7dd930240ff6e2c45970dcf39eb5b7aa, type: 3}
       propertyPath: phoneUI
