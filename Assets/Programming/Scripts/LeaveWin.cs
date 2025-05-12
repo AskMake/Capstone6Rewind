@@ -1,13 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LeaveWin : MonoBehaviour
 {
+    [SerializeField]
     PhoneAndTutorialManager phone;
-    void OnCollisionEnter(Collision other)
+    void  OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && phone.isGiven)
+        if (other.gameObject.CompareTag("Player") && phone.isGiven)
         {
-            Application.Quit();
+            Debug.Log("hello");
+            SceneManager.LoadScene(0);
+            SceneManager.SetActiveScene(SceneManager.GetSceneAt(0));
         }
     }
 }
