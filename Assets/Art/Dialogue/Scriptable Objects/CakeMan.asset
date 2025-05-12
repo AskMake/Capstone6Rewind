@@ -16,7 +16,17 @@ MonoBehaviour:
   isKey: 0
   isDialogue: 0
   lines:
-  - Hey, there you are. Long time no see. Anyways. Here is the deal.
-  - 
-  objectName: Poster
+  - Hey Vick, there you are.
+  - So here is the deal...
+  - 'A while back, Tina dropped me this notebook. Said it was for you. Mentioned
+    something about a party downtown. The ''End of the World'' shindig. '
+  - You two were close, right? How did that turn out? Actually, never mind. As your
+    dealer, I've learned not to ask too many questions.
+  - 'Thing is, I haven''t seen her since she gave me this. It''s been... a while.
+    People are starting to talk.  '
+  - 'Anyway, here''s the notebook. Maybe it''ll shed some light on where she went.
+    Or why she vanished. '
+  - 'Just... be careful, Vick. Sometimes, the answers we''re looking for aren''t
+    the ones we want to find."  '
+  objectName: CakeMan
   itemDescription: 

@@ -16,7 +16,8 @@ MonoBehaviour:
   isKey: 0
   isDialogue: 0
   lines:
-  - Oh, its the party she mentioned before she went avol.
-  - Its happening tonight at the club downtown.
+  - Oh, its the party Tina mentioned before she went avol.
+  - I wonder how it went.
+  - I should look around more.
   objectName: Poster
   itemDescription: 
