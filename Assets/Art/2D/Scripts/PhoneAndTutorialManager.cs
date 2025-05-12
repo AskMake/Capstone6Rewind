@@ -6,10 +6,13 @@ public class PhoneAndTutorialManager : MonoBehaviour
     public GameObject phoneUI;
     public GameObject noteUI;
     public TextMeshProUGUI tutorialText;
+    public TextMeshProUGUI noteTutText;
     public float tutorialDuration = 15f;
 
     private float tutorialTimer;
+    private float noteTutTimer;
     private bool tutorialActive = true;
+    private bool noteTut = true;
     private bool phoneIsActive = false;
     bool  noteBookActive ;
     public bool isGiven;
@@ -66,5 +69,15 @@ public class PhoneAndTutorialManager : MonoBehaviour
                 tutorialText.gameObject.SetActive(true);
             }
         }
+        if ((isGiven && noteTut) && !phoneIsActive)
+        {
+            noteTutText.gameObject.SetActive(true);
+            noteTutTimer -= Time.deltaTime;
+            if (noteTutTimer <= 0f)
+            {
+                noteTutText.gameObject.SetActive(false);
+                noteTut = false;
+            }
     }
+}
 }
