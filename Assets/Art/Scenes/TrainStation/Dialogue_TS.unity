@@ -56198,6 +56198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3034411334646296865, guid: 47fe4d262bb11a94b92d1ab7b8c0087a, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5278761517777898874, guid: 47fe4d262bb11a94b92d1ab7b8c0087a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
