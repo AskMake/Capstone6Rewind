@@ -4,11 +4,13 @@ public class Dialogue : Item
 {
     DialogueManager manager;
     bool interacted;
+    [SerializeField]
+    bool Notebook;
     public override void Interact()
     {
     {
         interacted = true;
-        manager.StartDialogue(itemInfo,true);
+        manager.StartDialogue(itemInfo,Notebook);
         base.Interact();
     }
     }
