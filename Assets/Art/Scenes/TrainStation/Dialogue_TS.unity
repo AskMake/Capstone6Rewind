@@ -58193,7 +58193,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2389309811349381048, guid: 32959bbe68b63d84e8431579d3436cbe, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 243
+      value: 336
       objectReference: {fileID: 0}
     - target: {fileID: 2389309811349381048, guid: 32959bbe68b63d84e8431579d3436cbe, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -58213,11 +58213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4477326380761801099, guid: 32959bbe68b63d84e8431579d3436cbe, type: 3}
       propertyPath: m_margin.x
-      value: -42.056473
+      value: -231.53209
       objectReference: {fileID: 0}
     - target: {fileID: 4477326380761801099, guid: 32959bbe68b63d84e8431579d3436cbe, type: 3}
       propertyPath: m_margin.z
-      value: -571.6303
+      value: -710.89166
       objectReference: {fileID: 0}
     - target: {fileID: 4477326380761801099, guid: 32959bbe68b63d84e8431579d3436cbe, type: 3}
       propertyPath: m_fontSizeBase
