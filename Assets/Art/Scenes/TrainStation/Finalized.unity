@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 3
+  m_AmbientIntensity: 5.09
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.48235297, g: 0.3137255, b: 0.2627451, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: bda78b9face15004da6578098f28d80d, type: 2}
@@ -14340,7 +14340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.010357
+      value: -37.01
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14348,7 +14348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.2504265
+      value: 5.09
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38975,7 +38975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.98964
+      value: 19.99
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38983,7 +38983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.2504265
+      value: 5.37
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52685ed25fdcb1b488b7047664232501, type: 3}
       propertyPath: m_LocalRotation.w
@@ -42659,8 +42659,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use WASD to move and press P to open and close your phone. Press E to
-    interact with objects. Explore and uncover the story. '
+  m_text: Use WASD to move and press P to open and close your phone. Press E to interact
+    with objects.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b07a4c2d5c894934c9ba66e2e32862ad, type: 2}
   m_sharedMaterial: {fileID: 917427485764608144, guid: b07a4c2d5c894934c9ba66e2e32862ad, type: 2}
@@ -43084,7 +43084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 1587124220}
-  itemInfo: {fileID: 11400000, guid: 9bcde28b694e0914e9abbe028441180c, type: 2}
+  itemInfo: {fileID: 11400000, guid: 89d812fe580925144a656bc32d4f8350, type: 2}
   outlineEnableDelay: 0.1
   outlineDisableDelay: 0.1
   Notebook: 1
@@ -50980,7 +50980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2ea1ccd72e26f874eac1724744be6ae7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9896832
+      value: 2.99
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2ea1ccd72e26f874eac1724744be6ae7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -50988,7 +50988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2ea1ccd72e26f874eac1724744be6ae7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.2504265
+      value: 5.47
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2ea1ccd72e26f874eac1724744be6ae7, type: 3}
       propertyPath: m_LocalRotation.w
