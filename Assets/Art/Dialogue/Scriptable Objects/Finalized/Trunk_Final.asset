@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fe4d54efdc35bd4d8564b6b1a2daefa, type: 3}
-  m_Name: Bush_Final
+  m_Name: Trunk_Final
   m_EditorClassIdentifier: 
   itemImage: {fileID: 0}
   isKey: 0
   isDialogue: 0
   lines:
-  - Hmm. Its a plant.
-  - Whats up plant?
-  objectName: Plant
+  - The package Tina left me.
+  - There is a journal in it, I wonder whats on it.
+  objectName: Trunk
   itemDescription: 

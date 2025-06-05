@@ -17,5 +17,10 @@ MonoBehaviour:
   isDialogue: 0
   lines:
   - Hey man.
+  - Listen, you and Tina were close right?
+  - The thing is... I havent heard from her in a while.
+  - And the last thing she did was drop me this package.
+  - She told me to give it to you when I see you.
+  - Its in the trunk.
   objectName: CakeMan
   itemDescription: 

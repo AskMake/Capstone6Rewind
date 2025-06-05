@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fe4d54efdc35bd4d8564b6b1a2daefa, type: 3}
-  m_Name: Bush_Final
+  m_Name: NewsStand_Final
   m_EditorClassIdentifier: 
   itemImage: {fileID: 0}
   isKey: 0
   isDialogue: 0
   lines:
-  - Hmm. Its a plant.
-  - Whats up plant?
-  objectName: Plant
+  - Missing cat.
+  - A job offer at the local cat meat factory.
+  - '"Now hiring cat lovers. Experience not required, just a strong stomach."'
+  - '"Benefits include nightmares and free lunch."'
+  - I should look around more.
+  objectName: News Stand
   itemDescription: 
