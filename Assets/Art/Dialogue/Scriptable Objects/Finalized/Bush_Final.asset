@@ -17,5 +17,6 @@ MonoBehaviour:
   isDialogue: 0
   lines:
   - Hmm. Its a plant.
+  - Whats up plant?
   objectName: Plant
   itemDescription: 

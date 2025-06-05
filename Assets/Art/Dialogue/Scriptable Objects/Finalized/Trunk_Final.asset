@@ -16,7 +16,7 @@ MonoBehaviour:
   isKey: 0
   isDialogue: 0
   lines:
-  - The parcel Tina left me.
-  - There is a journal in it, i wonder whats on it.
+  - The package Tina left me.
+  - There is a journal in it, I wonder whats on it.
   objectName: Trunk
   itemDescription: 

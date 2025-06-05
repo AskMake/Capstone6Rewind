@@ -17,8 +17,9 @@ MonoBehaviour:
   isDialogue: 0
   lines:
   - Missing cat.
-  - Job offer at the local meat factory.
-  - 'And Tina''s missing poster. '
-  - I really hope she is ok.
+  - A job offer at the local cat meat factory.
+  - '"Now hiring cat lovers. Experience not required, just a strong stomach."'
+  - '"Benefits include nightmares and free lunch."'
+  - I should look around more.
   objectName: News Stand
   itemDescription: 
