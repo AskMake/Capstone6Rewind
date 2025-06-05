@@ -27008,7 +27008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 944257153}
-  itemInfo: {fileID: 11400000, guid: 45bc3c99e9a4e894eaf06603b3aa8e03, type: 2}
+  itemInfo: {fileID: 11400000, guid: 3ff7a3e63fc3e13438a04ae0386055b8, type: 2}
   outlineEnableDelay: 0.1
   outlineDisableDelay: 0.1
   Notebook: 0
@@ -52671,7 +52671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 1870026805}
-  itemInfo: {fileID: 11400000, guid: 3aa694b3cc465134fbd1ccf4cc01e952, type: 2}
+  itemInfo: {fileID: 11400000, guid: b94f09c7e9688ca4b93ece736b705999, type: 2}
   outlineEnableDelay: 0.1
   outlineDisableDelay: 0.1
   Notebook: 0
@@ -57082,7 +57082,6 @@ GameObject:
   - component: {fileID: 2048524593}
   - component: {fileID: 2048524592}
   - component: {fileID: 2048524590}
-  - component: {fileID: 2048524605}
   - component: {fileID: 2048524604}
   - component: {fileID: 2048524603}
   - component: {fileID: 2048524606}
@@ -57381,27 +57380,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.4969177, y: 5.8995705, z: 64.3712}
   m_Center: {x: 35.54976, y: 2.4497852, z: 49.535454}
---- !u!65 &2048524605
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2048524588}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.455411, y: 3.7077065, z: 1.4955444}
-  m_Center: {x: -3.8791327, y: 1.3538532, z: 64.76587}
 --- !u!65 &2048524606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59758,7 +59736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 4626369281777622427}
-  itemInfo: {fileID: 11400000, guid: 4e52c3dca2fe4ce45a97fb46c6fb5b8a, type: 2}
+  itemInfo: {fileID: 11400000, guid: 9dd3fc0346d745d4680f9999277152d1, type: 2}
   outlineEnableDelay: 0.1
   outlineDisableDelay: 0.1
   Notebook: 0
