@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Art/Scenes/Main Menu/Main Menu.unity
     guid: cadbaaae8bd356c41865227326ee2b85
-  - enabled: 1
+  - enabled: 0
     path: Assets/Art/Scenes/TrainStation/Dialogue_TS.unity
     guid: b4a87a7826ffe3a498e1e16f3efa1368
-  - enabled: 1
+  - enabled: 0
     path: Assets/Art/Scenes/TrainStation/Environment_TS.unity
     guid: eb703e171b13c6c40a977fdc9bf18c9c
+  - enabled: 1
+    path: Assets/Art/Scenes/TrainStation/Finalized.unity
+    guid: 5250abd56f2b63143b8b33db25afb824
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

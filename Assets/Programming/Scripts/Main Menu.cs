@@ -6,13 +6,16 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField]
     PlayerInput playerInput;
-    void Start()
+    void Awake()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         playerInput.SwitchCurrentActionMap("UI");
     }
-    public void MenuButton(string name)
+    public void MenuButton(int name)
    {
-     SceneManager.SetActiveScene(SceneManager.GetSceneByName(name));
+     SceneManager.LoadScene(name);
+     SceneManager.SetActiveScene(SceneManager.GetSceneAt(name));
    }
     public void Quit()
     {
